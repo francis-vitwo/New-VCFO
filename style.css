@@ -1025,23 +1025,45 @@ section.gomes-section.testimonials .testimonials-container h1 {
     font-size: 15px;
 }
 
-/* .testimonials .testimonials-experience-card-image {
+.testimonials .testimonials-experience-card-image {
     display: flex;
     object-fit: cover;
     padding: 20px;
 }
 
-.testimonials .testimonials-experience-card-image img {
-    width: 100px;
-    height: 100px;
+.testimonials .testimonials-experience-card-image .testimonial-image-1{
+    margin-top: 50px;
+    width: 30%;
+}
+
+.testimonials .testimonials-experience-card-image .testimonial-image-1 img{
     object-fit: cover;
-    vertical-align: middle;
-    box-sizing: border-box;
-    border-radius: 90px;
-} */
+    border-radius: 5rem;
+}
+
+.testimonials .testimonials-experience-card-image .testimonial-image-2{
+    margin-top: 50px;
+    width: 50%;
+}
+
+.testimonials .testimonials-experience-card-image .testimonial-image-2 img{
+    object-fit: cover;
+    border-radius: 5rem;
+}
+
+.testimonials .testimonials-experience-card-image .testimonial-image-3{
+    margin-top: 50px;
+    width: 50%;
+}
+
+.testimonials .testimonials-experience-card-image .testimonial-image-3 img{
+    border-radius: 5rem
+}
+
 
 .testimonials .testimonials-client-name {
     padding: 20px;
+    margin-top: 50px;
 }
 
 .testimonials .testimonials-client-name h5 {
