@@ -1030,21 +1030,23 @@ section.gomes-section.testimonials .testimonials-container h1 {
 .testimonials .testimonials-experience-card-image {
     display: flex;
     object-fit: cover;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 10px 0 15px;
+
 }
 
 .testimonials .testimonials-experience-card-image img {
     border-radius: 5rem;
-    width: 130px;
-    height: 130px;
-    padding: 15px;
+    width: 105px;
+    height: 105px;
+    padding: 5px;
     object-fit: cover;
 }
 
 
 .testimonials .testimonials-client-name {
-    padding: 20px 28px;
+    padding: 20px 10px;
 }
 
 .testimonials .testimonials-client-name .disturb{
@@ -1052,18 +1054,18 @@ section.gomes-section.testimonials .testimonials-container h1 {
 }
 
 .testimonials .testimonials-client-name h5 {
-    font-size: 1.09rem;
+    font-size: 1rem;
     font-weight: 800;
     white-space: nowrap;
     margin: 0;
 }
 
 .testimonials .testimonials-client-name p {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     color: #00a100;
-    font-weight: 500;
+    font-weight: 400;
     white-space: nowrap;
-    margin: 0;
+    margin: 5px 0;
 }
 
 .gomes-footer {
