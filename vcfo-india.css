@@ -223,9 +223,34 @@ section.gomes-section a.get-consultant-btn:hover {
     font-weight: 200;
 }
 
-.vcfo-hero-section .client-images img {
+.vcfo-hero-section .client-images .logos{
+   white-space: nowrap;
+}
+
+.vcfo-hero-section .client-images .logos .logos-slide {
+    display: inline-block;
+    animation: 5s slide infinite linear;
+}
+
+.clients-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.vcfo-hero-section .client-images .logos .logos-slide img {
     object-fit: contain;
-    width: 10rem;
+    width: 40%;
+    height: 6rem;
     margin-left: 10px;
 }
 
@@ -1499,7 +1524,10 @@ ul.vcfo-more-info li i {
     }
 
     .what-virtual-cfo .virtual-heading-text.infographic-service {
-        height: 45rem;
+        height: 33rem;
+        width: 100%;
+        padding: 2rem 13px;
+        margin-bottom: 3rem;
     }
 
     .what-virtual-cfo .virtual-heading-text.infographic-service ul li{
@@ -1655,6 +1683,15 @@ ul.vcfo-more-info li i {
 
     .gomes-footer .vcfo-footer-row-1 .vcfo-more-info li a {
         justify-content: center;
+    }
+
+    section.gomes-section button.get-consultant-btn, section.gomes-section a.get-consultant-btn {
+        border-radius: 50px;
+        padding: 7px 18px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        max-width: 100%;
     }
 
 }
