@@ -90,11 +90,18 @@
                     </div> -->
 
                     <div class="client client-images">
-                        <marquee direction="left" loop>
+
+                        <div class="logos">
+                            <div class="logos-slide">
+                                
+                            </div>
+                        </div>
+                        <marquee direction="left" loop="infinite">
                             <!-- <img src="./images/client1.webp">
                             <img src="./images/client2.webp">
                             <img src="./images/client3.webp"> -->
-                            <img src="./images/client4.jpg">
+                            <div class="clients-logo">
+                                <img src="./images/client4.jpg">
                             <img src="./images/client5.jpg">
                             <img src="./images/client6.jpg">
                             <img src="./images/client7.jpg">
@@ -115,16 +122,17 @@
                             <img src="./images/client22.jpg">
                             <img src="./images/client23.jpg">
                             <img src="./images/client24.jpg">
-                            <img src="./images/client25.webp" >
-                            <img src="./images/client26.webp" >
-                            <img src="./images/client27.webp" >
-                            <img src="./images/client28.webp" >
-                            <img src="./images/client29.webp" >
-                            <img src="./images/client30.webp" >
-                            <img src="./images/client31.webp" >
-                            <img src="./images/client32.webp" >
-                            <img src="./images/client33.webp" >
-                            <img src="./images/client34.webp" >
+                            <img src="./images/client25.webp">
+                            <img src="./images/client26.webp">
+                            <img src="./images/client27.webp">
+                            <img src="./images/client28.webp">
+                            <img src="./images/client29.webp">
+                            <img src="./images/client30.webp">
+                            <img src="./images/client31.webp">
+                            <img src="./images/client32.webp">
+                            <img src="./images/client33.webp">
+                            <img src="./images/client34.webp">
+                            </div>
                         </marquee>
                     </div>
 
@@ -1083,14 +1091,14 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const buttons = document.querySelectorAll('.read-more-btn'); 
+            const buttons = document.querySelectorAll('.read-more-btn');
 
             buttons.forEach(button => {
                 button.addEventListener("click", function () {
-                    const cardText = this.previousElementSibling; 
-                    cardText.classList.toggle('expanded'); 
+                    const cardText = this.previousElementSibling;
+                    cardText.classList.toggle('expanded');
 
-                 
+
                     if (cardText.classList.contains('expanded')) {
                         this.textContent = 'Read Less';
                     } else {
