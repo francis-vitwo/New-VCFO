@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
 }
 
 .form-control:focus {
@@ -36,15 +37,6 @@
     font-weight: 700;
 }
 
-.ul {
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.ul li i {
-    margin-right: 10px;
-    color: var(--bgcolor);
-}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -146,7 +138,7 @@ section.gomes-section.vcfo-hero-section h1 {
     line-height: 1.6;
 }
 
-.hightlight-text-2{
+.hightlight-text-2 {
     color: var(--text-color1);
     font-weight: 600;
     filter: drop-shadow(4px 1px 23px var(--text-color1));
@@ -186,11 +178,13 @@ section.gomes-section a.check-service-btn {
     gap: 20px;
 }
 
-section.gomes-section button ion-icon, section.gomes-section a ion-icon {
+section.gomes-section button ion-icon,
+section.gomes-section a ion-icon {
     font-size: 1.125rem;
 }
 
-section.gomes-section button.get-consultant-btn, section.gomes-section a.get-consultant-btn {
+section.gomes-section button.get-consultant-btn,
+section.gomes-section a.get-consultant-btn {
     background: #199d1e;
     border-color: #199d1e;
     border-radius: 50px;
@@ -203,7 +197,8 @@ section.gomes-section button.get-consultant-btn, section.gomes-section a.get-con
     max-width: 44%;
 }
 
-section.gomes-section button.get-consultant-btn:hover, section.gomes-section a.get-consultant-btn:hover {
+section.gomes-section button.get-consultant-btn:hover,
+section.gomes-section a.get-consultant-btn:hover {
     background: #1eb623;
     border-color: #1eb623;
     filter: drop-shadow(4px 1px 15px #1eb623);
@@ -230,8 +225,7 @@ section.gomes-section button.get-consultant-btn:hover, section.gomes-section a.g
 
 .vcfo-hero-section .client-images img {
     object-fit: contain;
-    width: 100px;
-    height: 40px;
+    width: 10rem;
     margin-left: 10px;
 }
 
@@ -241,8 +235,8 @@ section.gomes-section button.get-consultant-btn:hover, section.gomes-section a.g
     padding: 7px 5px;
     border-radius: 15px;
     border: 1px solid #ffffff57;
-    max-width: 350px;
-    margin: 50px;
+    max-width: 450px;
+    margin: 10px;
 }
 
 .vcfo-hero-section .vcfo-container-2 .vcfo-experience-card-heading {
@@ -320,8 +314,9 @@ section.gomes-section.vcfo-indsexp-section {
 }
 
 .vcfo-indsexp-section .vcfo-indsexp-card {
-    background: var(--text-color2);
-    color: var(--text-color3);
+    background: #ffffff21;
+    border: #ffffff26 solid 2px;
+    color: var(--text-color2);
     border-radius: 16px;
     padding: 10px;
     min-width: 100%;
@@ -419,27 +414,57 @@ section.gomes-section.vcfo-indsexp-section {
 .what-virtual-cfo .virtual-ul.infographic-service-ul {
     padding: 30px 0;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    /* grid-template-columns: 2fr 2fr; */
     padding-top: 0;
+}
+
+.infographic-service h4 {
+    border-bottom: 1px solid #ffffff47;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .what-virtual-cfo .virtual-ul.infographic-service-ul li {
     margin-left: 10px;
-    list-style: disc;
 }
+
 
 .what-virtual-cfo .virtual-ul.infographic-service-ul li p {
     font-size: 0.8rem;
 }
 
-.infographic-service-ul li::marker {
-    color: #3bf442;
+.infographic-service ul {
+    list-style: none;
+    display: flex;
 }
+
+.infographic-service ul li {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0.3rem 0rem 0.5rem 0rem;
+}
+
+.infographic-service ul li i {
+    color: #45f505;
+    border-color: #1eb623;
+    filter: drop-shadow(4px 1px 15px #45f505);
+
+}
+
 
 .what-virtual-cfo .virtual-text .virtual-ul h4 {
     margin-bottom: 20px;
     border-bottom: 1px solid #ffffff63;
     padding-bottom: 12px;
+}
+
+.what-virtual-cfo .infographic-service {
+    background-color: #a2b6ca0f;
+    height: 30rem;
+    border: #ffffff26 solid 1px;
+    border-radius: 2rem;
+    padding: 1.5rem 3rem 2rem;
+    backdrop-filter: blur(11px);
 }
 
 .what-virtual-cfo .virtual-text h4.service-heading {
@@ -1073,6 +1098,7 @@ section.gomes-section.testimonials .testimonials-container h1 {
     white-space: nowrap;
     margin: 5px 0;
 }
+
 .modal-header .btn-close {
     background-color: aliceblue;
 }
@@ -1258,9 +1284,74 @@ ul.vcfo-more-info li i {
     z-index: 1;
 }
 
+.gomes-thank-you-page {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.gomes-thank-you-page .gomes-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
+.gomes-thank-you-page h1 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
 
+.gomes-thank-you-page p.lead {
+    font-weight: 200;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.gomes-thank-you-page .videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.gomes-thank-you-page .videos iframe {
+    border-radius: 12px;
+    transform: scale(0.9);
+    transition: all 0.4s ease-in-out;
+}
+
+.gomes-thank-you-page .videos iframe:hover {
+    transform: scale(1);
+}
+
+.gomes-body.gomes-thank-you-page section button {
+    padding: 7px 30px;
+    background: #05910a;
+    border-color: #05910a;
+}
+
+.gomes-thank-you-page button a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+
+.testimonials-experience-card-text {
+    padding: 5px 10px;
+    max-height: 163px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out; 
+}
+
+.testimonials-experience-card-text.expanded {
+    max-height: 100%; 
+    overflow: visible;
+}
 
 @media only screen and (max-width: 1023px) {
     .gomes-section {
@@ -1407,8 +1498,12 @@ ul.vcfo-more-info li i {
         margin: 0 1rem 1rem -2rem;
     }
 
-    .what-virtual-cfo .virtual-heading-text {
-        margin: 1rem;
+    .what-virtual-cfo .virtual-heading-text.infographic-service {
+        height: 45rem;
+    }
+
+    .what-virtual-cfo .virtual-heading-text.infographic-service ul li{
+        font-size: 0.9rem;
     }
 
     .vissionaries .container {
@@ -1515,8 +1610,8 @@ ul.vcfo-more-info li i {
     .gomes-footer {
         padding: 3rem 0;
     }
-    
-    .gomes-footer .vcfo-footer-row-1 .vcfo-social-icons li a{
+
+    .gomes-footer .vcfo-footer-row-1 .vcfo-social-icons li a {
         display: inline-block;
     }
 
@@ -1563,6 +1658,9 @@ ul.vcfo-more-info li i {
     }
 
 }
+
+
+
 
 
 /* @media (min-width: 320px) and (max-width: 1023px) {
