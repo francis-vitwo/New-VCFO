@@ -210,8 +210,14 @@ section.gomes-section button.get-consultant-btn,
     max-width: 44%;
 }
 
+.indsexp-button .get-consultant-btn:hover{
+    background: #1eb623;
+    border-color: #1eb623;
+    filter: drop-shadow(4px 1px 15px #1eb623);
+}
+
 section.gomes-section button.get-consultant-btn:hover,
-.what-virtual-cfo .get-consultant-btn:hover, .indsexp-button .get-consultant-btn{
+.what-virtual-cfo .get-consultant-btn:hover{
     background: #1eb623;
     border-color: #1eb623;
     filter: drop-shadow(4px 1px 15px #1eb623);
